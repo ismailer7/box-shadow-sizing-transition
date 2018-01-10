@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <script>
+ 
+    $(document).ready(function(){
+      $("#box").mouseover(function(){
+        $("body").css('background-color', '#eee');
+      });
+      $("#box").mouseout(function() {
+      	$("body").css('background-color', 'white');
+      });
+
+});
+
+
+
+
+  </script>
+</head>
+
+<style>
+	
+	* {
+		margin:0;
+		padding:0;
+		font-family: Roboto;
+		color: #F012BE;
+		font-weight: bold;
+	}
+
+	#box {
+		width: 400px;
+		height: 100%;
+		background: #eee;
+		box-sizing: border-box; /* it will stand for 400px width even if you adds  padding or margin or border size.
+				this will be 400px width.*/
+		background-color: #7FDBFF;
+		margin: 20px auto;
+		border: 0;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: all 0.2s linear;
+		box-shadow: 0px 2px 2px #bbb;
+	}
+
+	#box:hover {
+		opacity: 0.8;
+		box-shadow: 0px 0px 0px 4px #F012BE;
+	}
+
+	#box:hover body {
+		background: #eee; 
+	}
+
+
+
+
+	p {
+		padding: 20px;
+	}
+
+</style>
+
+<body>
+	
+	<div id="box">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni deserunt iste placeat suscipit itaque molestiae natus accusantium, optio qui necessitatibus, eaque distinctio odio adipisci autem quaerat blanditiis. Corporis pariatur, recusandae.</p>
+	</div>
+
+</body>
+</html>
